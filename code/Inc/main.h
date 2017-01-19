@@ -1,10 +1,10 @@
 /**
   ******************************************************************************
-  * @file    stm32f1xx_it.h
-  * @brief   This file contains the headers of the interrupt handlers.
+  * File Name          : main.h
+  * Description        : This file contains the common defines of the application
   ******************************************************************************
   *
-  * COPYRIGHT(c) 2016 STMicroelectronics
+  * COPYRIGHT(c) 2017 STMicroelectronics
   *
   * Redistribution and use in source and binary forms, with or without modification,
   * are permitted provided that the following conditions are met:
@@ -30,37 +30,28 @@
   *
   ******************************************************************************
   */
-
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __STM32F1xx_IT_H
-#define __STM32F1xx_IT_H
+#ifndef __MAIN_H
+#define __MAIN_H
+  /* Includes ------------------------------------------------------------------*/
 
-#ifdef __cplusplus
- extern "C" {
-#endif 
+/* USER CODE BEGIN Includes */
 
-/* Includes ------------------------------------------------------------------*/
-/* Exported types ------------------------------------------------------------*/
-/* Exported constants --------------------------------------------------------*/
-/* Exported macro ------------------------------------------------------------*/
-/* Exported functions ------------------------------------------------------- */
+/* USER CODE END Includes */
 
-void NMI_Handler(void);
-void HardFault_Handler(void);
-void MemManage_Handler(void);
-void BusFault_Handler(void);
-void UsageFault_Handler(void);
-void SVC_Handler(void);
-void DebugMon_Handler(void);
-void PendSV_Handler(void);
-void SysTick_Handler(void);
-void USART1_IRQHandler(void);
-void USART2_IRQHandler(void);
+/* Private define ------------------------------------------------------------*/
 
-#ifdef __cplusplus
-}
-#endif
+/* USER CODE BEGIN Private defines */
 
-#endif /* __STM32F1xx_IT_H */
+/* USER CODE END Private defines */
 
+/**
+  * @}
+  */ 
+
+/**
+  * @}
+*/ 
+
+#endif /* __MAIN_H */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
